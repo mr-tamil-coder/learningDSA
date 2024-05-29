@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+// 09.To find Lcm 
 import java.util.*;
 
 class lcm{

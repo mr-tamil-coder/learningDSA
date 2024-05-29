@@ -1,3 +1,4 @@
+// 10. to find given number is prime or not
 import java.util.Scanner;
 
 class prime{
