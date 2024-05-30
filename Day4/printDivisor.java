@@ -1,3 +1,4 @@
+// 12. print all divisors of given number
 import java.util.*;
 public class printDivisor {
     public static void BruteForcePrintDivisor(int n){
