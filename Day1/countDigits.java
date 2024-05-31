@@ -19,7 +19,9 @@ class countDigits{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the digits you want to count");
         num = sc.nextInt();
-        int result=CountDigits(num);
+        // int result=CountDigits(num);
+        // optimized way in O(1)
+        int result=(int)Math.log10(num)+1;
         System.out.println("The total digits is "+result);
 
     }
