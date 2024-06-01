@@ -10,8 +10,16 @@ public class bitMasking {
         int onMask=1<<i;
         System.out.println("The final value is "+(n|onMask));
     }
-  
+    public static void switchOff(){
+        // Switch off Ith position
+        int n=36;
+        int i=5;
+        int offMask=~(1<<i);
+        System.out.println("The final value after off is "+(n&offMask));
+    }
     public static void main(String[] args) {
-       switchOn();     
+       switchOn(); 
+       switchOff();
+
     }
 }
