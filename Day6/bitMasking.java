@@ -17,9 +17,18 @@ public class bitMasking {
         int offMask=~(1<<i);
         System.out.println("The final value after off is "+(n&offMask));
     }
+    public static void toggleBit(){
+        // Toogle Ith position
+
+        int n=36;
+        int i=5;
+        int toggleMask=1<<i;
+        System.out.println("After toogle the bit value is"+(n^toggleMask));
+    }
     public static void main(String[] args) {
        switchOn(); 
        switchOff();
+       toggleBit();
 
     }
 }
