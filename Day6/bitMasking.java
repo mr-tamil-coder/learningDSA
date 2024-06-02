@@ -25,10 +25,22 @@ public class bitMasking {
         int toggleMask=1<<i;
         System.out.println("After toogle the bit value is"+(n^toggleMask));
     }
+    public static void checkOnOrOff(){
+        // Check On and Off
+        int n=36,i=5;
+        int cmask=1<<i;
+        if((n&cmask)==0)
+        System.out.println("the bit is off");
+        else
+        System.out.println("the bit is on");
+
+    }
     public static void main(String[] args) {
        switchOn(); 
        switchOff();
        toggleBit();
+       checkOnOrOff();
+
 
     }
 }
