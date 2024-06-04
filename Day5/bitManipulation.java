@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class bitManipulation {
-    public static void decimalToBinary(int n){
+    public static String decimalToBinary(int n){
 
         /* 
 
@@ -28,11 +28,27 @@ public class bitManipulation {
              n=n/2;
          }
          System.out.println("the Binary value is "+b);
+         return b;
 
 
     }
- public static void main(String[] args) {
-        decimalToBinary(40);
+    public static int binaryToDecimal(String b){
+        int result=0;
+        int powerOf2=1;
+        for(int i=b.length()-1;i>=0;i--){
+            if(b.charAt(i)=='1'){
+                result=result+powerOf2;
+            }
+            powerOf2=powerOf2*2;
+        }
+        return result;
+    }
     
- }    
+     public static void main(String[] args) {
+        int decimal=40;
+        String binary=decimalToBinary(decimal);
+        System.out.println(binaryToDecimal(binary));
+     }
+    
+    
 }
