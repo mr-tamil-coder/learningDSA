@@ -7,7 +7,19 @@ class Node{
         this.next=null;
     }
  }
+
  
+ class LinkedList{
+    Node head;
+    //to print the linkedList
+    void printLinkedList(){
+        Node curr=head;
+        while(curr!=null){
+            System.out.print(curr.data +" ");
+            curr=curr.next;
+        }
+    }
+ }
 public class sll {
     
 }
