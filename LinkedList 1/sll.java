@@ -19,6 +19,19 @@ class Node{
             curr=curr.next;
         }
     }
+    //to add data in linkedList
+    void add(int e){
+        Node temp=new Node(e);
+        if(head==null){
+            head=temp;
+        }else{
+            Node curr=head;
+            while(curr.next!=null){
+                curr=curr.next;
+            }
+            curr.next=temp;
+        }
+    }
  }
 public class sll {
     
