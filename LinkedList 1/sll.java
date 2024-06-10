@@ -32,6 +32,16 @@ class Node{
             curr.next=temp;
         }
     }
+     // add element in the first node
+     void addFirst(int e){
+        Node temp=new Node(e);
+        if(head==null){
+            head=temp;
+        }else{
+           temp.next=head;
+           head=temp;
+        }
+    }
  }
 public class sll {
     
