@@ -42,6 +42,27 @@ class Node{
            head=temp;
         }
     }
+     // add element using index
+     void addUsingIndex(int e,int index) throws IndexOutOfBoundsException{
+        try{
+         if(index==0){
+             addFirst(e);
+         }else{
+             Node temp=new Node(e);
+             int count=0;
+             Node curr=head;
+             while(count < index-1){
+                 curr=curr.next;
+                 count++;
+             }
+             temp.next=curr.next;
+             curr.next=temp;
+         }
+ 
+        }catch(Exception ee){
+             throw new IndexOutOfBoundsException();
+     }
+  }
  }
 public class sll {
     
