@@ -62,6 +62,12 @@ class Node{
         }catch(Exception ee){
              throw new IndexOutOfBoundsException();
      }
+     //add whole elments in linkedList
+    void addAllElement(int[] arr){
+        for (int element : arr) {
+            add(element);
+        }
+    }
   }
  }
 public class sll {
