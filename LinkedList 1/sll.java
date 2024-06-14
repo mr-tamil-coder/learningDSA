@@ -68,6 +68,18 @@ class Node{
             add(element);
         }
     }
+     //remove first element
+     void removeFirst(){
+        if(head==null){
+            System.out.println("LinkedList is empty");
+        }else if(head.next==null){
+            head=null;
+        }else if(head.next!=null){
+            Node curr=head;
+            head=head.next;
+            curr.next=null;
+        }
+    }
   }
  }
 public class sll {
