@@ -107,6 +107,21 @@ class Node{
         }
         return -1;
     }
+
+     //last index of the element
+     int lastIndexofElement(int e){
+        Node curr=head;
+        int count=0,index=-1;
+        while (curr!=null) {
+            if(curr.data==e){
+                index=count;
+            }
+            curr=curr.next;
+            count++;
+        }
+        return index;
+    }
+
   }
  }
 public class sll {
