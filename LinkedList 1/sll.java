@@ -80,6 +80,20 @@ class Node{
             curr.next=null;
         }
     }
+    //remove last element
+    void removeLast(){
+        if(head==null){
+            System.out.println("LinkedList is empty");
+         }else if(head.next==null){
+            head=null;
+         }else if(head.next!=null){
+            Node curr=head;
+            while(curr.next.next!=null){
+                curr=curr.next;
+            }
+            curr.next=null;
+         }
+    }
   }
  }
 public class sll {
