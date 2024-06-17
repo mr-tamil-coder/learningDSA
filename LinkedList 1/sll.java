@@ -94,6 +94,19 @@ class Node{
             curr.next=null;
          }
     }
+    // find index of specified element
+    int findIndexofElement(int e){
+        Node curr=head;
+        int count=0;
+        while (curr!=null) {
+            if(curr.data==e){
+                return count;
+            }
+            curr=curr.next;
+            count++;
+        }
+        return -1;
+    }
   }
  }
 public class sll {
