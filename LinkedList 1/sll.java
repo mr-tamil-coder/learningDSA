@@ -125,5 +125,19 @@ class Node{
   }
  }
 public class sll {
-    
+    public static void main(String args[]){
+        // create a LinkedList object
+        LinkedList ll=new LinkedList();
+        ll.add(10);//0
+        ll.add(20);//1
+        ll.add(20);//2
+        ll.add(30);//3
+        ll.add(40);//4
+        int[] arr={4,3,5,2,9};
+        // ll.addAllElement(arr);
+        // ll.removeFirst();
+        // ll.removeLast();
+System.out.println(ll.lastIndexofElement(20));
+        ll.printLinkedList();
+    }
 }
